@@ -9,10 +9,16 @@ import { createStore, combineReducers } from "redux";
 import mealsReducer from "./store/reducers/meals";
 import { Provider } from "react-redux";
 enableScreens();
+//this is the main screen
+console.log("App.js ");
 
 const rootReducer = combineReducers({
   meals: mealsReducer,
 });
+
+function createLog() {
+  console.log("App js");
+}
 
 const store = createStore(rootReducer);
 
